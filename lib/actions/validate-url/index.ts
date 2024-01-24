@@ -26,7 +26,7 @@ const WARNINGS = {
   },
   doesNotExist: {
     title: "Este sitio no existe",
-    description: "Aunque este sition tiene la extensión oficial del gobierno, parece que no existe y es inaccesible",
+    description: "Aunque este sitio tiene la extensión oficial del gobierno, parece que no existe y es inaccesible",
   },
   unknown: {
     title: "No pudimos verificar la seguridad de este sitio",
