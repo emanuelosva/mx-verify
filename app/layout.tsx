@@ -7,7 +7,7 @@ import "./globals.css"
 // Config
 import { SITE } from "@/config"
 
-export const fontSans = FontSans({
+const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
