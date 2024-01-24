@@ -12,15 +12,11 @@ The system validates:
 
 See it in action: https://mx-verify.vercel.app
 
-<div styles="display: flex; gap: 4px;">
-
-![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-page.png)
-
-![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-success.png)
-
-![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-warning.png)
+| Main Page              | Valid Site             |
+| ---------------------- | ---------------------- |
+| ![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-page.png) | ![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-success.png) |
 
 
-![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-danger.png)
-
-<div>
+| Unknown Site           | Fake Site             |
+| ---------------------- | ---------------------- |
+| ![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-warning.png) | ![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-danger.png) |
