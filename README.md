@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mx Verify
 
-## Getting Started
+This is a simple page to easy validate the authenticity of an officail site from Mexico Government.
 
-First, run the development server:
+The intention behind this project is to help people to avoid falling into scams or fishing attacks when they are trying to make an official procedure or payment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The system validates:
+- The existence of a SSL certificate (A https secured site)
+- Site has the valid Mexican government domain: `.gob.mx`
+- Looks up if the url is in the list of known fake sites by the Mexico government.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+See it in action: https://mx-verify.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<div styles="display: flex; gap: 4px;">
 
-## Learn More
+![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-page.png)
 
-To learn more about Next.js, take a look at the following resources:
+![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-success.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-warning.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+![Demo](https://raw.githubusercontent.com/emanuelosva/mx-verify/main/_demo/demo-danger.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div>
