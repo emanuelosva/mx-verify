@@ -55,7 +55,9 @@ export default function URLResult({ result, setResult }: URLResultProps) {
           </DialogHeader>
           <Result result={result} />
           <DialogFooter>
-            <Button variant="outline">Cerrar</Button>
+            <Button onClick={() => onOpenDialogChange(false)} variant="outline">
+              Cerrar
+            </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
