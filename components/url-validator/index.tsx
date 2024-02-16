@@ -13,6 +13,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form"
+import { LoaderIcon } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import URLResult from "@/components/url-validator/result"
 // Server actions
@@ -25,6 +26,7 @@ const formSchema = z.object({
 })
 
 export default function UrlInput() {
+  const [loading, setLoading] = useState(false)
   const [result, setResult] = useState<URLValidation | null>(null)
   const showResult = Boolean(result)
 
@@ -34,7 +36,9 @@ export default function UrlInput() {
   })
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    setLoading(true)
     const { status, message } = await validateUrl(values.url)
+    setLoading(false)
     setResult({ status, message })
   }
 
@@ -57,7 +61,12 @@ export default function UrlInput() {
             </FormItem>
           )}
         />
-        <Button className="w-full font-bold text-2xl" type="submit">Validar</Button>
+        <Button disabled={loading} className="w-full font-bold text-2xl" type="submit">
+          {loading
+            ? <><LoaderIcon className="mr-2 h-4 w-4 animate-spin" /> Validando...</>
+            : "Validar"
+          }
+        </Button>
       </form>
       {showResult && <URLResult result={result as URLValidation} setResult={setResult} />}
     </Form>
